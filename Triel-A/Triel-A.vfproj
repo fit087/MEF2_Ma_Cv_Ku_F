@@ -30,15 +30,21 @@
 		<File RelativePath="..\Fonte\IOLIST.H"/>
 		<File RelativePath="..\Fonte\POINTERS.H"/>
 		<File RelativePath="..\Fonte\TAPES.H"/></Filter>
-		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<File RelativePath="..\data\Adolfo\entrada.dat"/>
+		<File RelativePath="..\data\2014.07.29 Emprestado\exercicio1.dat"/>
+		<File RelativePath="..\data\2014.07.29 Newmark\exercicio1_newmark.dat"/>
+		<File RelativePath="..\data\Teste 2014\retangulo.dat"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
 		<File RelativePath="..\Fonte\ADDBAN2.F">
 			<FileConfiguration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" EmitDiagnosticsToFile="true" WarnInterfaces="false"/></FileConfiguration></File>
 		<File RelativePath="..\Fonte\ASSEMB.F"/>
+		<File RelativePath="..\Fonte\assemb_massa.f"/>
 		<File RelativePath="..\Fonte\BKDATA.F"/>
 		<File RelativePath="..\Fonte\COLSOL.F"/>
 		<File RelativePath="..\Fonte\CONTRL.F"/>
+		<File RelativePath="..\Fonte\CONTRL_Newmark.f"/>
 		<File RelativePath="..\Fonte\EQUAT.F"/>
 		<File RelativePath="..\Fonte\FUNCOES.F"/>
 		<File RelativePath="..\Fonte\INELEM.F"/>
@@ -46,19 +52,24 @@
 		<File RelativePath="..\Fonte\IOMNGR.F"/>
 		<File RelativePath="..\Fonte\JOINTS.F"/>
 		<File RelativePath="..\Fonte\LDRIVER.F"/>
+		<File RelativePath="..\Fonte\ldriver_newmark.f"/>
 		<File RelativePath="..\Fonte\LOADS.F"/>
 		<File RelativePath="..\Fonte\MATRIZ.F"/>
+		<File RelativePath="..\Fonte\Matriz_newmark.f"/>
 		<File RelativePath="..\Fonte\MATSET.F">
 			<FileConfiguration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" BoundsCheck="false"/></FileConfiguration></File>
 		<File RelativePath="..\Fonte\MEMO.F"/>
+		<File RelativePath="..\Fonte\Newmark.for"/>
 		<File RelativePath="..\Fonte\PROFIL2.F"/>
 		<File RelativePath="..\Fonte\PTLOAD.F"/>
 		<File RelativePath="..\Fonte\SAIDAS.F"/>
 		<File RelativePath="..\Fonte\SETDOF.F"/>
 		<File RelativePath="..\Fonte\SOLVER.F"/>
+		<File RelativePath="..\Fonte\solver_newmark.for"/>
 		<File RelativePath="..\Fonte\STRESS3.F"/>
 		<File RelativePath="..\Fonte\TIMETB.F"/>
 		<File RelativePath="..\Fonte\TRIE2D2.F"/>
-		<File RelativePath="..\Fonte\TRIEL-A.F"/></Filter></Files>
+		<File RelativePath="..\Fonte\TRIEL-A.F"/>
+		<File RelativePath="..\Fonte\triel2d_massa.f"/></Filter></Files>
 	<Globals/></VisualStudioProject>

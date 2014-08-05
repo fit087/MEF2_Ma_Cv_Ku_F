@@ -10,6 +10,8 @@
 
 c	call pre_plas
 
+C     Cria um vetorzão para almacenar todos os dados
+
 	call locate ('stiff   ',nstiff,nwk,nc)
 	call locate ('maxa    ',nmaxa ,nr ,nc)
 	call locate ('f0      ',nf0   ,nr ,nc)

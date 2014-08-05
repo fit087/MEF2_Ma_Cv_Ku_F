@@ -2,6 +2,7 @@
 	implicit real*8 (a-h,o-z)
 
 c     leitura de propriedades do material
+! Pega os materiais 
 
       real*8  prop(nummat,ncprop)
 	include 'tapes.h'
@@ -18,7 +19,7 @@ c     leitura de propriedades do material
 		  
       bulk = eyoung/(3.d0*(1.d0-2.d0*poiss))
       
-      write (iout,101)   n,eyoung,poiss,thic,dens
+      write (iout,101)   n,eyoung,poiss,thic,dens !E poisson espessura, densidade
       
       if (n.gt.nummat.or.n.le.0) then
          write (iout,300) n

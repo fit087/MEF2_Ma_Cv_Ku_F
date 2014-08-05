@@ -4,3 +4,4 @@
       common  /filerad/ iblank,ibacks,filer
       character*70       filer    
 
+C para saber que arquivo estou lendo

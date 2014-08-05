@@ -49,7 +49,7 @@ c	fatora matriz de rigidez elastica
 c	retro-substitui matriz de rigidez elastica
       
 
-      call colsol (stiff,f0,maxa,neq,nwk,neq1,2,iplt)
+      call colsol (stiff,f0,maxa,neq,nwk,neq1,2,iplt)!Resolve   stiff=B f0=A se sobreescreve f0ttt
       
 	call stress3 (ia(nlm), ia(nx), ia(ny), ia(ninc), ia(nmtype), ia(nprop),
      .              numnp,nume,nummat,nwk,ndt,f0,neq,

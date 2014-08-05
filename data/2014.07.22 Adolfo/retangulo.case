@@ -1,0 +1,28 @@
+#
+#       ensight:
+#
+FORMAT
+type:   ensight
+
+GEOMETRY
+model:                          fit.geo000
+
+VARIABLE
+vector per node:                deslocamento    fit.dis***
+scalar per element:             SX              fit.TXX***
+scalar per element:             SY              fit.TYY***
+scalar per element:             SXY             fit.TXY***
+scalar per element:             EX              fit.EXX***
+scalar per element:             EY              fit.EYY***
+scalar per element:             EXY             fit.EXY***
+scalar per element:             S1              fit.S11***
+scalar per element:             S2              fit.S22***
+tensor symm per element:		T				fit.str***
+
+TIME
+time set:               1
+number of steps:        1
+filename start number:  0
+filename increment:     1
+time values:
+ 0.00E+00    1.00E+00

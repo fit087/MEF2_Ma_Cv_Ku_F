@@ -2,7 +2,7 @@ C    -------------------
       SUBROUTINE IOMNGR  ( INT )
 C    -------------------
 C
-	include	'tapes.h'
+	include	'tapes.h'     !inclui variaveis de outras funções é dizer outras funções que usam elas em comum
 	common  /iolist/        ntm,ntr,nin,not,nsp,nfl,nt7,nt8
 	
 	character*70         filein     ,
@@ -37,17 +37,18 @@ C --- DEFINICAO DAS UNIDADES LOGICAS PARA I/O
 	      write (*,'(a)') ' Arquivo de DADOS   ?'
 	      read  (*,'(a)')  filein
 	
-	      write (*,'(a)') ' Radical das SAIDAS ?'
-            read  (*,'(a)')  filer
+	      write (*,'(a)') ' Radical das SAIDAS ?' !
+            read  (*,'(a)')  filer         !read(unit,'formato da leitura') variavel_onde_salva
+										!(a) é string e pega tudo com espaço e tudo, * pega até o espaço
 	
-            iblank=index(filer,' ')
+            iblank=index(filer,' ')   !primeiro espaço em branco
             ibacks=index(filer,'\',.true.)
 
       endif                      
 
 c     monta os nomes dos arquivos
 
-          fileout     =   filer(1:iblank-1)//'.lis'
+          fileout     =   filer(1:iblank-1)//'.lis'      !// é concatena string. Exclui os espaços em branco e concatena .lis
 	    fileesaida  =   filer(1:iblank-1)//'.esai'
 	    filensaida  =   filer(1:iblank-1)//'.nsai'
           fileplt     =   filer(1:iblank-1)//'.plt'
@@ -96,7 +97,7 @@ C --------------------------------------------------------------------
       ibuff = 1
 
       OPEN (UNIT=IIN ,FILE=filein,
-     &        BLANK='ZERO',mode='READ',status='OLD')
+     &        BLANK='ZERO',mode='READ',status='OLD')  ! status='OLD' já existe
 c     OPEN (UNIT=IOUT     ,FILE=fileout,fileopt='BUFFER=10'  )
       OPEN (UNIT=IOUT     ,FILE=fileout,blocksize=ibuff  ) 
       OPEN (UNIT=IPLT     ,FILE=fileplt  )

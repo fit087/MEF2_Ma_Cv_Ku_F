@@ -11,7 +11,7 @@
 
 	do i = 1, nume
 
-		read  (iin,100)  n,(incid(n,ii),ii=1,nnoel),mtype(n)
+		read  (iin,100)  n,(incid(n,ii),ii=1,nnoel),mtype(n)   !nnoel numero de nós por elemento, loop implicito dentro do read, dependendo do nro de nós por elemento então em caso de elemento triangular lê 3 elementos
 		write (iout,200) n,(incid(n,ii),ii=1,nnoel),mtype(n)
 
 		if (n.gt.nume.or.n.lt.1) then
@@ -27,7 +27,7 @@
 		do igl = 1, ngl
 			kk = kk + 1
 			do i = 1, nume
-				lm(i,kk) = id(igl,incid(i,j))
+				lm(i,kk) = id(igl,incid(i,j))  !lm é o id só que do elemento
 			enddo
 		enddo
 	enddo	
