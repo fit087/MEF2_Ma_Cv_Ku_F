@@ -15,4 +15,7 @@
           vpred(ieq)=vcorr(ieq)+dt*(1.d0-gamman)*an(ieq)
       ENDDO
       
+      upred(0)=0.d0   !notaçao cientifica .d0 = E+00
+      vpred(0)=0.d0
+      
       end

@@ -76,12 +76,12 @@ c
               an(ieq)=f0(ieq)-f(ieq)-fi(ieq)
           ENDDO
           
-          call COLSOL(stiff,an,maxa,neq,nwk,neq+1,2,ierror)
+          call COLSOL(stiff,an,maxa,neq,nwk,neq+1,2,ierror)  !o que ele retornar vai estar no an
           
           call corretor(neq,dt,betan,gamman,upred,vpred,an,ucorr,vcorr,)
           
           
-          
+            ! a cantidade de arquivos que eu quero
           IF (mod(istep,nflag).eq.0) THEN
               icount = icount + 1
               CALL ENSG_VEC('dis',ucorr,id,icount)

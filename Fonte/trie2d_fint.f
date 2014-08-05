@@ -10,7 +10,7 @@
       
       dimension       stiff  (nwk)           ,
      &                fp     (0:neq)         ,
-     &                up     (0:neq)         ,
+     &                up     (0:neq)         ,   !Declara que o vetor inicia em 0
      &                fi     (0:neq)         ,
      &                upred  (0:neq)         ,
      &                vpred  (0:neq)         , 
@@ -116,7 +116,7 @@ c       massa do elemento (area*thic*rho)
           thic = prop ( mtype(iel),3 )
 	    dens = prop ( mtype(iel),4 )
           
-          emass = 0.5d0 * area2 * thic * dens
+          emass = 0.5d0 * area2 * thic * dens !m esta implicito que é enteiro
           emass_3 = emass/3.d0
 	  
 c       matriz de massa de elemento
