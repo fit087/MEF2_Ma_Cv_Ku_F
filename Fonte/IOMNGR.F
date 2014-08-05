@@ -22,16 +22,16 @@ C
       
 c     checa linha de comandos por parametros
       
-c         count = nargs()
-c         if (count.gt.1) then
-c         
-c            call getarg (1,filer,iblank)
-c            iblank = iblank + 1
-c            ibacks = index (filer,'\',.true.)
-c            filein = filer(1:iblank-1)//'.dat'
-c         
-c         else   
-c
+         count = nargs()
+         if (count.gt.1) then
+         
+            call getarg (1,filer,iblank)
+            iblank = iblank + 1
+            ibacks = index (filer,'\',.true.)
+            filein = filer(1:iblank-1)//'.dat'
+         
+         else   
+
 C --- DEFINICAO DAS UNIDADES LOGICAS PARA I/O
 
 	      write (*,'(a)') ' Arquivo de DADOS   ?'
@@ -39,11 +39,11 @@ C --- DEFINICAO DAS UNIDADES LOGICAS PARA I/O
 	
 	      write (*,'(a)') ' Radical das SAIDAS ?'
             read  (*,'(a)')  filer
-
+	
             iblank=index(filer,' ')
             ibacks=index(filer,'\',.true.)
 
-c      endif                      
+      endif                      
 
 c     monta os nomes dos arquivos
 

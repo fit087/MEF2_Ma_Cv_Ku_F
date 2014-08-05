@@ -1,6 +1,7 @@
-      subroutine solver_newmark  (stiff,massa,maxa,disp,f,f0,fi,du,nwk,
-     &             id,upred,vpred,ucorr,vcorr,nsteps,nflag,timef,dt,
-     &             betan,gamman)
+      subroutine solver_newmark  (x,y,z,incid,prop,mtype,lm,
+     &             stiff,maxa,f,f0,fi,
+     &             du,nwk,id,upred,vpred,ucorr,vcorr,
+     &             nsteps,nflag,timef,dt,betan,gamman,damp1,damp2)
 c
 
 c
@@ -14,9 +15,14 @@ c
       include 'tapes.h'
       include 'pointers.h'
                                                   
-      dimension       stiff   (nwk)           ,
-     &                massa   (nwk)           , 
-     &                disp    (0:neq)         ,
+      dimension       x       (numnp)         ,
+     &                y       (numnp)         ,
+     &                z       (numnp)         ,
+     &                incid   (nume,nnoel)    ,
+     &                prop    (nummat,8)      ,
+     &                mtype   (nume)          ,
+     &                lm      (nume,ndt)      , 
+     &                stiff   (nwk)           ,
      &                f       (0:neq)         ,
      &                f0      (0:neq)         ,
      &                fi      (0:neq)         ,
@@ -44,18 +50,37 @@ c
       character*1   flgs
       logical       fimarq /.false./
 
-      call bot ('solver')  
-
-      call dclear (disp(0),neq+1)  
+      call bot ('solver') 
 
       neq1 = neq + 1
       icount = 0
+      ucorr(:) = 0.d0
+      vcorr(:) = 0.d0
+      an(:) = 0.d0
+      
+      call effectmass_trie2d (stiff,fp,up,maxa,lm,x,y,z,incid,mtype,
+     &                 prop,numnp,nume,nummat,nwk,ndt,neq+1,
+     &                 neqp,nnoel,8,damp1,damp2,betan,gamman,
+     &                 dt,neq,ndaux)
 
       DO istep = 1,nsteps
           
-          call preditor (neq,dt, betan, gamman, ucorr, vcorr, an, upred, vpred)
-          call newmark
-          call corretor (neq,dt, betan, gamman, upred, vpred, an, ucorr, vcorr,)
+          call preditor(neq,dt,betan,gamman,ucorr,vcorr,an,upred,vpred)
+          call trie2d_fint (stiff,fp,up,maxa,lm,x,y,z,incid,
+     &                      mtype,prop,numnp,nume,nummat,nwk,ndt,
+     &                      neq+1,neqp,nnoel,8,
+     &                      damp1,damp2,betan,gamman,dt,neq,
+     &                      fi,upred,vpred)
+          
+          DO ieq=1,neq
+              an(ieq)=f0(ieq)-f(ieq)-fi(ieq)
+          ENDDO
+          
+          call COLSOL(stiff,an,maxa,neq,nwk,neq+1,2,ierror)
+          
+          call corretor(neq,dt,betan,gamman,upred,vpred,an,ucorr,vcorr,)
+          
+          
           
           IF (mod(istep,nflag).eq.0) THEN
               icount = icount + 1
@@ -63,16 +88,7 @@ c
           ENDIF
           
       ENDDO
-      
-c	fatora matriz de rigidez elastica
-
-      call colsol (stiff,f0,maxa,neq,nwk,neq1,1,iplt)
-
-c	retro-substitui matriz de rigidez elastica
-      
-
-      call colsol (stiff,f0,maxa,neq,nwk,neq1,2,iplt)
-      
+            
 	call stress3 (ia(nlm), ia(nx), ia(ny), ia(ninc), ia(nmtype), ia(nprop),
      .              numnp,nume,nummat,nwk,ndt,f0,neq,
      &              tx,ty,txy,tz,s1,s2,
@@ -120,7 +136,7 @@ c      Saida das Tensoes Principais
      &            ' *** Incremento ',i5,' em ',i5,' iteracoes *** ',/,
      .            ' *** Execucao interrompida               *** ',/)
 
-end
+      end
 
 
 !PREDITOR

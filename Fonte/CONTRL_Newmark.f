@@ -3,6 +3,7 @@
 	
 	include     'cntl.h'
 	include     'tapes.h'
+      include     'time.h'
 
 	call bot ('contrl')
 
@@ -23,7 +24,7 @@
 	read (iin,'(5l1)')      view3d,ensight,xgraph,displac,stress 
       read (iin,'(2f10.0)')   fxv3d,fyv3d
       
-      read (iin,'(6f10.0,1i5)') timef,dt,alphad,betad,betan,gamman,nfile
+      read (iin,'(6f10.0,1i5)') timef,dt,damp1,damp2,betan,gamman,nfile
 
 	call setdof (idof,ngl)
 

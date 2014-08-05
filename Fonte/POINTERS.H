@@ -12,5 +12,5 @@ c
       common / pointers /	nsig,ndsig,ntau,ndeps,nprop,nmtype,niplast,
      &						nx,ny,nz,nincid,nft,nuniax,nratio,nnsub,nfe,ndu,nlm,
      &						nid,ndisp,nsg0,npnode,ndpnode,npls,niedge,ninc,nmaxa,
-     &						nstiff,nmassa,nupred,nvpred,nucorr,vucorr              
+     &						nstiff              
 

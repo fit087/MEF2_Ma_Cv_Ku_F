@@ -29,18 +29,20 @@
 		<File RelativePath="..\Fonte\COMMON.H"/>
 		<File RelativePath="..\Fonte\IOLIST.H"/>
 		<File RelativePath="..\Fonte\POINTERS.H"/>
-		<File RelativePath="..\Fonte\TAPES.H"/></Filter>
+		<File RelativePath="..\Fonte\TAPES.H"/>
+		<File RelativePath="..\Fonte\time.h"/></Filter>
 		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
 		<File RelativePath="..\Fonte\ADDBAN2.F">
 			<FileConfiguration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" EmitDiagnosticsToFile="true" WarnInterfaces="false"/></FileConfiguration></File>
 		<File RelativePath="..\Fonte\ASSEMB.F"/>
-		<File RelativePath="..\Fonte\assemb_massa.f"/>
 		<File RelativePath="..\Fonte\BKDATA.F"/>
 		<File RelativePath="..\Fonte\COLSOL.F"/>
 		<File RelativePath="..\Fonte\CONTRL.F"/>
 		<File RelativePath="..\Fonte\contrl_newmark.f"/>
+		<File RelativePath="..\Fonte\corretor.f"/>
+		<File RelativePath="..\Fonte\effectmass_trie2d.f"/>
 		<File RelativePath="..\Fonte\EQUAT.F"/>
 		<File RelativePath="..\Fonte\FUNCOES.F"/>
 		<File RelativePath="..\Fonte\INELEM.F"/>
@@ -51,12 +53,11 @@
 		<File RelativePath="..\Fonte\ldriver_newmark.f"/>
 		<File RelativePath="..\Fonte\LOADS.F"/>
 		<File RelativePath="..\Fonte\MATRIZ.F"/>
-		<File RelativePath="..\Fonte\matriz_newmark.f"/>
 		<File RelativePath="..\Fonte\MATSET.F">
 			<FileConfiguration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" BoundsCheck="false"/></FileConfiguration></File>
 		<File RelativePath="..\Fonte\MEMO.F"/>
-		<File RelativePath="..\Fonte\newmark.f"/>
+		<File RelativePath="..\Fonte\preditor.f"/>
 		<File RelativePath="..\Fonte\PROFIL2.F"/>
 		<File RelativePath="..\Fonte\PTLOAD.F"/>
 		<File RelativePath="..\Fonte\SAIDAS.F"/>
@@ -66,6 +67,6 @@
 		<File RelativePath="..\Fonte\STRESS3.F"/>
 		<File RelativePath="..\Fonte\TIMETB.F"/>
 		<File RelativePath="..\Fonte\TRIE2D2.F"/>
-		<File RelativePath="..\Fonte\TRIEL-A.F"/>
-		<File RelativePath="..\Fonte\triel2d_massa.f"/></Filter></Files>
+		<File RelativePath="..\Fonte\trie2d_fint.f"/>
+		<File RelativePath="..\Fonte\TRIEL-A.F"/></Filter></Files>
 	<Globals/></VisualStudioProject>

@@ -16,13 +16,15 @@ C COPPE/LAMCE 2005 CES + JRPG + NOGJ
       CALL BOT ('triel ')
 
 	call setdb
-	call contrl
+!	call contrl
+      call contrl_newmark
 	
 	call inmesh
 	call loads
 	
 	call matriz
-	call ldriver
+!	call ldriver
+      call ldriver_newmark
 	
       CALL EOT ('triel ')
       CALL IOMNGR (1)
