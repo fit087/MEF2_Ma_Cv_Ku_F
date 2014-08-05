@@ -13,9 +13,9 @@
 
 	write (iout,101)
 
-	do i = 1, numnp !1 até o numero total de nós
+	do i = 1, numnp
 
-		read  (iin ,100) n,inc,x(n),y(n),z(n) !lendo os nós
+		read  (iin ,100) n,inc,x(n),y(n),z(n)
 		write (iout,200) n,inc,x(n),y(n),z(n)
 
 		if ( n.gt.numnp.or.n.lt.1.or.n.ne.i) then

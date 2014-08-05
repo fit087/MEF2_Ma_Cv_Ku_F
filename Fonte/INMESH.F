@@ -48,7 +48,7 @@ c     definicao dos elementos
      .			nume,nnoel,ndt,ngl)
 
 	incre = 0
-	call ensg_geo (ia(nx),ia(ny),ia(nz),ia(ninc),incre) !chama uma subrotina que cria a saida no ensg
+	call ensg_geo (ia(nx),ia(ny),ia(nz),ia(ninc),incre)
 
 	call eot ('inmesh')
 	return

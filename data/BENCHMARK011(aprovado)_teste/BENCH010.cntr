@@ -1,0 +1,92 @@
+# HEADER (CHARACTER*80 )
+Análise dinâmica sem amortecimento de viga de seção transversal quadrada de base e altura igual a 0.2 m e comprimento igual a 2.0 m , Engastado em uma extremidade e aplicada uma força transversal de 50 N na outra extemidade. 
+
+#  NUMNP ,     NUME,    NUMMAT,    NNOEL,   NGL  , NOPLOT , NGLPLOT , iSOLVER_TYPE , iREORDERING , KMAX , LMAX , ETOL , NITER** (5 inteiros free format) 
+   2612        11644        1       4        3        52        2           1              1         1       1     1      100
+
+#  TIMEF ,       DT,   NIMP,  DAMP1, DAMP2 , ALPHA , BETA , GAMMA ,   IFUNC , NPTF,  A_FUNC,  B_FUNC,  OMEGA_FUNC ,  PHASE_FUNC, GRAV ** ( free format) 
+   20.0         0.1    200    0.0    0.0    0.0    0.25    0.50      3      3      0.0       0.0      0.0              0.0       0.0    
+
+#  TIME,      VALUE
+   0.0        0.0
+   1.0        1.0
+  20.0        1.0
+
+#  etype 01234 (epd, ept, calor2d, calor3d, elasticidade3d) ** (1 character*14 formatted)
+elasticidade3d
+
+#  No mat,   prop1,    prop2,    prop3,     prop4,   prop5,  prop6,   prop7,  prop8,   prop9,  prop10 **(NUMMAT LINES, 11 caracter free format)
+    1     10000000.0    0.4    0.0   1100.0    0.0     0.0    0.000   0.000    0.000   0.000
+
+
+
+
+#   README
+# 
+#   NUMNP        = Numero de nos da malha
+#   NUME         = Numero de elementos da malha
+#   NUMMAT       = Numero de materias da malha
+#   NNOEL        = Numero de nos de cada elemento da malha
+#   NGL          = Numero de graus de liberdade por no
+#   NOPLOT       = Numero do no a ter grau de liberdade plotado
+#   NGLPLOT      = Grau de liberdade de plotagem
+#   iSOLVER_TYPE = Flag do tipo de solução usada
+#                iSOLVER_TYPE = 1   : COLSOL
+#                iSOLVER_TYPE = 2   : PCG
+#                iSOLVER_TYPE = 3   : GMRES
+#   iREORDERING  = Flag de opção de otimização da banda
+#                iREORDERING = 1    :   otimização da banda
+#                iREORDERING = 0    :   não otimização da banda
+#   KMAX         = parâmetro de entrada do método iterativo GMRES
+#   LMAX         = parâmetro de entrada do método iterativo GMRES
+#   ETOL         = tolerância usada para o método iterativo GMRES
+#
+#   
+#   TIMEF        = Tempo final da análise 
+#   DT           = Intervalo de tempo de cada passo
+#   NIMP         = Número de impressões
+#   DAMP1        = Coeficiente de amortecimento relacionado com a matriz de massa (Usa-se zero quando não houver amortecimento)
+#   DAMP2        = Coeficiente de amortecimento relacionado com a matriz de rigidez (Usa-se zero quando não houver amortecimento)
+#   ALPHA        = Parâmetro de acuracia e estabilidade do método de newmark
+#   BETA         = Parâmetro de acuracia e estabilidade do método de newmark
+#   GAMA         = Parâmetro de acuracia e estabilidade do método de newmark
+#   IFUNC        = Flag de opção do tipo de força aplicada
+#                IFUNC = 1    : Força constante
+#                IFUNC = 3    : Força recebe valores nos pontos informados na linha abaixo
+#                                essa informação vem no formato : (Tempo e proporção da força)
+#   NPTF         = Número de pontos em que terá informação da força
+#
+#
+#       *** Para elasticidade 2d, 
+#           etype = EPT
+#
+#           prop1 = modulo de elasticidade
+#           prop2 = coef. poisson
+#           prop3 = espessura do elemento
+#           prop4 = massa especifica 
+#           prop5 a prop10 = nao usados, colocar 0.0
+#
+#       *** Para elasticidade 2d, 
+#           etype = EPD
+#
+#           prop1 = modulo de elasticidade
+#           prop2 = coef. poisson
+#           prop3 = nao usada
+#           prop4 = massa especifica 
+#           prop5 a prop10 = nao usados, colocar 0.0
+#
+#       *** Para elasticidade 3d, 
+#           etype = ELASTICIDADE3d
+#
+#           prop1 = modulo de elasticidade
+#           prop2 = coef. poisson
+#           prop3 = nao usada
+#           prop4 = massa especifica 
+#           prop5 a prop10 = nao usados, colocar 0.0
+#
+#       *** Para calor 2d, etype = calor2d
+#           prop1 = condutividade termica xx
+#           prop2 = condutividade termica yy
+#           prop3 = calor especifico
+#           prop4 = massa especifica 
+#           prop5 a prop10 = nao usados, colocar 0.0 

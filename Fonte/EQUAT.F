@@ -29,9 +29,9 @@ c     neqp = numero de equacoes prescritas (nao nulas)
 c		select case( id(j,i) )
 		   
 c		case (is_fixed)
-		if (id(j,i).eq.is_fixed) then  !se o nó é restrito
+		if (id(j,i).eq.is_fixed) then
           
-          		id(j,i) = 0             !mapea as equações, serve para avisar quem é a eq 1,2,3
+          		id(j,i) = 0
               
 c		case (is_free)  
 		elseif (id(j,i).eq.is_free) then            		   
@@ -43,7 +43,7 @@ c		case (is_prescribed)
 		elseif (id(j,i).eq.is_prescribed) then
           
 			neqp = neqp + 1
-			id(j,i) = -neqp           !só para separar
+			id(j,i) = -neqp
               
 c		end select
 		endif

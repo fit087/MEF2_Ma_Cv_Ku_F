@@ -1,5 +1,5 @@
 	subroutine trie2d_massa (massa,maxa,lm,x,y,incid,mtype,prop,
-     .                   numnp,nume,nummat,nwk,ndt,neq1)
+     .                         numnp,nume,nummat,nwk,ndt,neq1)
 	implicit real*8 (a-h,o-z)
 	include 'tapes.h'
 
@@ -52,54 +52,32 @@ c
 	        stop
 	    endif
 
-c       estado plano de deformacoes (thick = 1.) 
-c
-c       area2    = 2 * area
-c       volume   = 0.5 * area2 * thick
-c       det(jac) = area2
-c       vjac2    = volume / det(jacobiano)**2
-c
-c                   | y23  y31  y12 |
-c       B = 1/area2 |               |  = dNi/dXj  (i=1,2,3 ; j=1,2)
-c                   | x32  x31  x21 |
-
+c       massa do elemento (area*thic*rho)
 
           thic = prop ( mtype(iel),3 )
-
-	    vjac2 = 0.5d0 / area2 * thic
-
-c       matriz constitutiva D
-
 	    dens = prop ( mtype(iel),4 )
           
-          mass=0.5d0*area2*thic*dens
-          mass_3=mass/3.d0
-          
+          mass = 0.5d0 * area2 * thic * dens
+          mass_3 = mass/3.d0
 	  
-c       matriz de rigidez de elemento  int(BtDB.dV)
+c       matriz de massa de elemento
 
 	    ske (1)  = mass_3
-	    ske (3)  =  mass_3
-          ske (6)  =  mass_3
-          ske (10)  =  mass_3
-          ske (15)  =  mass_3
-          ske (21)  =  mass_3
-     
-          
+          ske (3)  = mass_3
+          ske (6)  = mass_3
+          ske(10)  = mass_3
+          ske(15)  = mass_3
+          ske(21)  = mass_3
 
-          
-          
-          do j = 1, ndt
+	    do j = 1, ndt
 	        lmaux(j) = lm (iel,j)
           enddo 
 	          
-	    call addban2 (massa,maxa,ske,lmaux,ndt)   !Matriz skyline
-          
-          !Cria matriz de amortecimento
-          do i=1,nwk
-              damp(i)=alphad*stiff(i)+betad*massa(i)
-          enddo
+	    call addban2 (massa,maxa,ske,lmaux,ndt)
 	  
+         !do i=1,nwk
+         !    damp(i) = alphad*stiff(i) + betad*massa(i)
+         !enddo
 	
 	                                   
 c	    kk = 0                             
@@ -144,3 +122,8 @@ c	deallocate (sg,stat=ierr)
   300 format (' *** (TRIE2D) Area nao positiva p/ o elemento (',i5,')')
 
 	end
+
+
+
+
+ 

@@ -1,5 +1,4 @@
 	subroutine contrl 
-      ! Avisa ao programa que tipo de problema vai ser estudiado
 	implicit real*8 (a-h,o-z)
 	
 	include     'cntl.h'
@@ -7,8 +6,8 @@
 
 	call bot ('contrl')
 
-	read (iin,100) hed        ! porque começa h é real. hed, mas não faz sentido então ele esta declarado em outra função
-	read (iin,120) numnp,nume,nummat,ncarg,keyopt   !nummat materias di, ncarg no de ele que estao cargados!opção de como o executar
+	read (iin,100) hed
+	read (iin,120) numnp,nume,nummat,ncarg,keyopt
 	
 	view3d  = .false.
 	ensight = .false.
@@ -21,8 +20,7 @@
 	fxv3d = 1.d0
 	fyv3d = 1.d0
 	
-	read (iin,'(5l1)')      view3d,ensight,xgraph,displac,stress  !ftftt
-
+	read (iin,'(5l1)')      view3d,ensight,xgraph,displac,stress 
       read (iin,'(2f10.0)')   fxv3d,fyv3d
 
 	call setdof (idof,ngl)
@@ -36,7 +34,7 @@
 	elseif (keyopt.eq.2) then
 	
 	write(iout,*)"Estado Plano de Tensao"
-                                                     
+
 	endif
 	
 	write (iout,220) idof,numnp,nume,nummat,ncarg,keyopt

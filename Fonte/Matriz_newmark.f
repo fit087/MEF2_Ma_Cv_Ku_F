@@ -1,4 +1,4 @@
-    subroutine matriz
+	subroutine matriz_newmark
 	implicit real*8 (a-h,o-z)
 
 	include         'common.h'
@@ -15,9 +15,8 @@
 	call profil2 (ia(nmaxa),ia(nmht),ia(nlm),neq,nume,ndt,nwk)
 
 	call define ('stiff    ',nstiff,nwk,1)
-    
-    call define ('massa    ',nmassa,nwk,1)    
-!	call dclear (ia(nstiff),nwk)
+      call define ('massa    ',nmassa,nwk,1)
+c	call dclear (ia(nstiff),nwk)
 
       call assemb
       call assemb_massa

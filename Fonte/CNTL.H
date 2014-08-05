@@ -15,7 +15,8 @@
      &              view3d,ensight,xgraph,desloc,tensao,flgout,
      &              ixno,ixgl,fxv3d,fyv3d,hed,ntria,nquad,keyopt,
      &              neplot,ngeplot,nnplot,ngnplot
-	 &				timef,dt,alphad,betad,betan,gamman,nfile
+
+	  common /newm/ timef,dt,alphad,betad,betan,gamman,nfile
 	 
 	 
 

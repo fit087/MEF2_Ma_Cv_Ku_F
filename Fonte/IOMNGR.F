@@ -2,7 +2,7 @@ C    -------------------
       SUBROUTINE IOMNGR  ( INT )
 C    -------------------
 C
-	include	'tapes.h'     !inclui variaveis de outras funções é dizer outras funções que usam elas em comum
+	include	'tapes.h'
 	common  /iolist/        ntm,ntr,nin,not,nsp,nfl,nt7,nt8
 	
 	character*70         filein     ,
@@ -22,33 +22,32 @@ C
       
 c     checa linha de comandos por parametros
       
-         count = nargs()
-         if (count.gt.1) then
-         
-            call getarg (1,filer,iblank)
-            iblank = iblank + 1
-            ibacks = index (filer,'\',.true.)
-            filein = filer(1:iblank-1)//'.dat'
-         
-         else   
-
+c         count = nargs()
+c         if (count.gt.1) then
+c         
+c            call getarg (1,filer,iblank)
+c            iblank = iblank + 1
+c            ibacks = index (filer,'\',.true.)
+c            filein = filer(1:iblank-1)//'.dat'
+c         
+c         else   
+c
 C --- DEFINICAO DAS UNIDADES LOGICAS PARA I/O
 
 	      write (*,'(a)') ' Arquivo de DADOS   ?'
 	      read  (*,'(a)')  filein
 	
-	      write (*,'(a)') ' Radical das SAIDAS ?' !
-            read  (*,'(a)')  filer         !read(unit,'formato da leitura') variavel_onde_salva
-										!(a) é string e pega tudo com espaço e tudo, * pega até o espaço
-	
-            iblank=index(filer,' ')   !primeiro espaço em branco
+	      write (*,'(a)') ' Radical das SAIDAS ?'
+            read  (*,'(a)')  filer
+
+            iblank=index(filer,' ')
             ibacks=index(filer,'\',.true.)
 
-      endif                      
+c      endif                      
 
 c     monta os nomes dos arquivos
 
-          fileout     =   filer(1:iblank-1)//'.lis'      !// é concatena string. Exclui os espaços em branco e concatena .lis
+          fileout     =   filer(1:iblank-1)//'.lis'
 	    fileesaida  =   filer(1:iblank-1)//'.esai'
 	    filensaida  =   filer(1:iblank-1)//'.nsai'
           fileplt     =   filer(1:iblank-1)//'.plt'
@@ -97,7 +96,7 @@ C --------------------------------------------------------------------
       ibuff = 1
 
       OPEN (UNIT=IIN ,FILE=filein,
-     &        BLANK='ZERO',mode='READ',status='OLD')  ! status='OLD' já existe
+     &        BLANK='ZERO',mode='READ',status='OLD')
 c     OPEN (UNIT=IOUT     ,FILE=fileout,fileopt='BUFFER=10'  )
       OPEN (UNIT=IOUT     ,FILE=fileout,blocksize=ibuff  ) 
       OPEN (UNIT=IPLT     ,FILE=fileplt  )

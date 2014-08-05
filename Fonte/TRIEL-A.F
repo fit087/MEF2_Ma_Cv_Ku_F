@@ -11,19 +11,18 @@ C **********************************************************************
 C COPPE-PEC/UFRJ/1995 JLDA
 C COPPE/LAMCE 2005 CES + JRPG + NOGJ
 
-      CALL TIME_TABLE        !controla o tempo de execução
-      CALL IOMNGR (0)       !preparas os arquivos para a leitura, prepara a memoria e todos os arquivos
+      CALL TIME_TABLE
+      CALL IOMNGR (0)
       CALL BOT ('triel ')
 
 	call setdb
 	call contrl
 	
 	call inmesh
-	call loads       !le os carregamentos
+	call loads
 	
 	call matriz
-!	call ldriver        !resolve.deve mexerse para adicionar o transiente
-      !call ldriver_newmark
+	call ldriver
 	
       CALL EOT ('triel ')
       CALL IOMNGR (1)
