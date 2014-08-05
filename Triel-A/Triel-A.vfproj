@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{AB39492F-E9C4-4FAA-A6B0-8F3628E1F25D}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd">
+		<File RelativePath="..\Fonte\CNTL.H"/>
+		<File RelativePath="..\Fonte\COMMON.H"/>
+		<File RelativePath="..\Fonte\IOLIST.H"/>
+		<File RelativePath="..\Fonte\POINTERS.H"/>
+		<File RelativePath="..\Fonte\TAPES.H"/></Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\Fonte\ADDBAN2.F">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" EmitDiagnosticsToFile="true" WarnInterfaces="false"/></FileConfiguration></File>
+		<File RelativePath="..\Fonte\ASSEMB.F"/>
+		<File RelativePath="..\Fonte\BKDATA.F"/>
+		<File RelativePath="..\Fonte\COLSOL.F"/>
+		<File RelativePath="..\Fonte\CONTRL.F"/>
+		<File RelativePath="..\Fonte\EQUAT.F"/>
+		<File RelativePath="..\Fonte\FUNCOES.F"/>
+		<File RelativePath="..\Fonte\INELEM.F"/>
+		<File RelativePath="..\Fonte\INMESH.F"/>
+		<File RelativePath="..\Fonte\IOMNGR.F"/>
+		<File RelativePath="..\Fonte\JOINTS.F"/>
+		<File RelativePath="..\Fonte\LDRIVER.F"/>
+		<File RelativePath="..\Fonte\LOADS.F"/>
+		<File RelativePath="..\Fonte\MATRIZ.F"/>
+		<File RelativePath="..\Fonte\MATSET.F">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" BoundsCheck="false"/></FileConfiguration></File>
+		<File RelativePath="..\Fonte\MEMO.F"/>
+		<File RelativePath="..\Fonte\PROFIL2.F"/>
+		<File RelativePath="..\Fonte\PTLOAD.F"/>
+		<File RelativePath="..\Fonte\SAIDAS.F"/>
+		<File RelativePath="..\Fonte\SETDOF.F"/>
+		<File RelativePath="..\Fonte\SOLVER.F"/>
+		<File RelativePath="..\Fonte\STRESS3.F"/>
+		<File RelativePath="..\Fonte\TIMETB.F"/>
+		<File RelativePath="..\Fonte\TRIE2D2.F"/>
+		<File RelativePath="..\Fonte\TRIEL-A.F"/></Filter></Files>
+	<Globals/></VisualStudioProject>

@@ -1,0 +1,958 @@
+VERSION 10.00 (b)
+command: delay_refresh ON
+#
+# EnSight context file version 2.0
+#
+#
+# File Information
+# File Information Begin
+# data: binary_files_are native
+# data: format case
+# data: path C:\Users\Public\Documents\Cursos\Cursos_COPPE\MEF II\programa\Triel-A\data\Teste 2014
+# data: geometry retangulo.case
+# data: shift_time 1.000000 0.000000 0.000000
+# data: read
+# File Information End
+#
+# Number Model Parts : 1
+# Part Name          : malha
+# Part Information Begin
+# part: select_default
+# part: modify_begin
+# part: elt_representation not_loaded
+# part: modify_end
+# data_partbuild: begin
+# data_partbuild: data_type unstructured
+# data_partbuild: group OFF
+# data_partbuild: select_begin
+#          1
+# data_partbuild: select_end
+# data_partbuild: description malha
+# data_partbuild: create
+# data_partbuild: end
+# Part Information End
+#
+# Number Orig. Variables: 10
+# Variable Name         : SX
+# Variable Name         : SY
+# Variable Name         : SXY
+# Variable Name         : EX
+# Variable Name         : EY
+# Variable Name         : EXY
+# Variable Name         : S1
+# Variable Name         : S2
+# Variable Name         : deslocamento
+# Variable Name         : T
+#
+#
+# Restore Transformation View State
+#
+test: restore_periodicity OFF
+view_transf: restore_view CMDKEYWORD_BASEDIR\retangulo.ctx_view
+test: restore_periodicity ON
+#
+# Global node/label filter/color information
+#
+annot_entlbl: node_thresholds none
+annot_entlbl: element_thresholds none
+annot_entlbl: node_threshold_low 1
+annot_entlbl: node_threshold_high 1000000
+annot_entlbl: element_threshold_low 1
+annot_entlbl: element_threshold_high 1000000
+annot_entlbl: node_rgb 1.000000 1.000000 1.000000
+annot_entlbl: element_rgb 1.000000 1.000000 1.000000
+#
+# Solution Time Information
+#
+solution_time: update_type discrete
+solution_time: show_as step
+solution_time: #_of_cycles 1
+solution_time: begin_step 0
+solution_time: current_step 0.0000e+000
+solution_time: end_step 0
+solution_time: update_to_current
+#
+# Extended CFD Variables
+#
+varextcfd: modify_begin
+varextcfd: density 1.0000e+000
+varextcfd: ratio_of_spec_heat 1.4000e+000
+varextcfd: freestream_mach 1.0000e+000
+varextcfd: gas_constant 1.0000e+000
+varextcfd: freestream_density 1.0000e+000
+varextcfd: freestream_speed_sound 1.0000e+000
+varextcfd: modify_end
+varextcfd: show_extended OFF
+#
+# Activate Variables
+#
+variables: activate SX
+variables: activate SXY
+variables: activate deslocamento
+variables: activate T
+variables: activate Coordinates
+variables: activate Time
+#
+# Frame Information
+#
+frame: select_begin
+0
+frame: select_end
+frame: modify_begin
+frame: visible OFF
+frame: type rectangular
+frame: len_x 1.666667e+000
+frame: len_y 1.666667e+000
+frame: len_z 1.666667e+000
+frame: #_of_labels_x 3
+frame: #_of_labels_y 3
+frame: #_of_labels_z 3
+frame: line_width 1
+frame: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+frame: x_labels OFF
+frame: y_labels OFF
+frame: z_labels OFF
+frame: symmetry_axis z
+frame: modify_end
+frame: select_default
+frame: modify_begin
+frame: visible OFF
+frame: type rectangular
+frame: len_x 1.666667e+000
+frame: len_y 1.666667e+000
+frame: len_z 1.666667e+000
+frame: #_of_labels_x 3
+frame: #_of_labels_y 3
+frame: #_of_labels_z 3
+frame: line_width 1
+frame: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+frame: x_labels OFF
+frame: y_labels OFF
+frame: z_labels OFF
+frame: symmetry_axis z
+frame: modify_end
+#
+# Global View and Tool Settings
+#
+view: hidden_surface ON
+view: highlight_parts OFF
+view: hidden_line OFF
+view: perspective ON
+view: clipping OFF
+view: fast_display OFF
+annotation: text_display ON
+annotation: axis_model ON
+view: bounds OFF
+annotation: axis_global OFF
+annotation: axis_local ON
+annotation: node_labeling ON
+annotation: element_labeling ON
+annotation: legend ON
+tools: cursor OFF
+tools: line OFF
+tools: box OFF
+tools: plane OFF
+tools: quadric none
+tools: line_restricttosurface OFF
+tools: line_normal positive
+#
+# Textures
+#
+#
+# Attributes To Restore Viewport Defaults
+#
+viewport: select_default
+viewport: view_dimension 3D
+viewport: auto_centering OFF
+viewport: border_visible ON
+viewport: border_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport: background_type blended
+viewport: blend_levels 3
+viewport: constant_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: visible ON
+viewport: origin_x 3.000000e-001
+viewport: origin_y 3.000000e-001
+viewport: width 2.000000e-001
+viewport: height 2.000000e-001
+viewport: hidden_surface ON
+viewport: hidden_line ON
+viewport: perspective ON
+viewport: track Off
+viewport: tracking_node_id -1
+viewport: light1_azimuth 0.000000e+000
+viewport: light1_elevation 0.000000e+000
+viewport: light1_position Relative
+viewport: light2_intensity 0.000000e+000
+viewport: blend_editlevel 1
+viewport: blend_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: blend_position 0.000000e+000
+viewport: blend_editlevel 2
+viewport: blend_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: blend_position 3.300000e-001
+viewport: blend_editlevel 3
+viewport: blend_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+viewport: blend_position 1.000000e+000
+viewport_bounds: dimension 3D
+viewport_bounds: visible ON
+viewport_bounds: transparency 1.000000e+000
+viewport_bounds: length as_specified
+viewport_bounds: axis_linewidth 2
+viewport_bounds: axis_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: grid_linewidth 1
+viewport_bounds: grid_linetype solid
+viewport_bounds: grid_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: subgrid_linewidth 1
+viewport_bounds: subgrid_linetype solid
+viewport_bounds: subgrid_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+viewport_bounds: auto_size ON
+viewport_bounds: axis_x_min -9.900000e+001
+viewport_bounds: axis_x_max -9.900000e+001
+viewport_bounds: axis_x_numgrid 5.000000e+000
+viewport_bounds: axis_x_numsubgrid 2.000000e+000
+viewport_bounds: axis_x_gridtype tick
+viewport_bounds: axis_x_sgridtype tick
+viewport_bounds: axis_x_labelaxisloc all
+viewport_bounds: axis_x_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_x_labelextentloc min
+viewport_bounds: axis_x_gridextentloc min
+viewport_bounds: axis_y_min -9.900000e+001
+viewport_bounds: axis_y_max -9.900000e+001
+viewport_bounds: axis_y_numgrid 5.000000e+000
+viewport_bounds: axis_y_numsubgrid 2.000000e+000
+viewport_bounds: axis_y_gridtype tick
+viewport_bounds: axis_y_sgridtype tick
+viewport_bounds: axis_y_labelaxisloc all
+viewport_bounds: axis_y_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_y_labelextentloc min
+viewport_bounds: axis_y_gridextentloc min
+viewport_bounds: axis_z_min -9.900000e+001
+viewport_bounds: axis_z_max -9.900000e+001
+viewport_bounds: axis_z_numgrid 5.000000e+000
+viewport_bounds: axis_z_numsubgrid 2.000000e+000
+viewport_bounds: axis_z_gridtype tick
+viewport_bounds: axis_z_sgridtype tick
+viewport_bounds: axis_z_labelaxisloc all
+viewport_bounds: axis_z_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_z_labelextentloc min
+viewport_bounds: axis_z_gridextentloc min
+viewport_bounds: label_size 2.000000e+001
+viewport_bounds: axis_x_format %g
+viewport_bounds: axis_y_format %g
+viewport_bounds: axis_z_format %g
+viewport: select_begin
+ 0
+viewport: select_end
+#
+# Attributes To Restore Viewports
+#
+viewport: select_begin
+ 0
+viewport: select_end
+viewport: view_dimension 3D
+viewport: auto_centering OFF
+viewport: border_visible OFF
+viewport: border_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport: background_type blended
+viewport: blend_levels 3
+viewport: constant_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: visible ON
+viewport: origin_x 0.000000e+000
+viewport: origin_y 0.000000e+000
+viewport: width 1.000000e+000
+viewport: height 1.000000e+000
+viewport: hidden_surface ON
+viewport: hidden_line ON
+viewport: perspective ON
+viewport: track Off
+viewport: tracking_partbyname "(CASE:CMDKEYWORD_CURCASE)malha"
+viewport: tracking_node_id -1
+viewport: light1_azimuth 0.000000e+000
+viewport: light1_elevation 0.000000e+000
+viewport: light1_position Relative
+viewport: light2_intensity 0.000000e+000
+viewport: blend_editlevel 1
+viewport: blend_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: blend_position 0.000000e+000
+viewport: blend_editlevel 2
+viewport: blend_rgb 0.000000e+000 0.000000e+000 0.000000e+000
+viewport: blend_position 3.300000e-001
+viewport: blend_editlevel 3
+viewport: blend_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+viewport: blend_position 1.000000e+000
+viewport_bounds: dimension 3D
+viewport_bounds: visible ON
+viewport_bounds: transparency 1.000000e+000
+viewport_bounds: length as_specified
+viewport_bounds: axis_linewidth 2
+viewport_bounds: axis_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: grid_linewidth 1
+viewport_bounds: grid_linetype solid
+viewport_bounds: grid_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: subgrid_linewidth 1
+viewport_bounds: subgrid_linetype solid
+viewport_bounds: subgrid_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+viewport_bounds: auto_size ON
+viewport_bounds: axis_x_min -9.900000e+001
+viewport_bounds: axis_x_max -9.900000e+001
+viewport_bounds: axis_x_numgrid 5.000000e+000
+viewport_bounds: axis_x_numsubgrid 2.000000e+000
+viewport_bounds: axis_x_gridtype tick
+viewport_bounds: axis_x_sgridtype tick
+viewport_bounds: axis_x_labelaxisloc all
+viewport_bounds: axis_x_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_x_labelextentloc min
+viewport_bounds: axis_x_gridextentloc min
+viewport_bounds: axis_y_min -9.900000e+001
+viewport_bounds: axis_y_max -9.900000e+001
+viewport_bounds: axis_y_numgrid 5.000000e+000
+viewport_bounds: axis_y_numsubgrid 2.000000e+000
+viewport_bounds: axis_y_gridtype tick
+viewport_bounds: axis_y_sgridtype tick
+viewport_bounds: axis_y_labelaxisloc all
+viewport_bounds: axis_y_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_y_labelextentloc min
+viewport_bounds: axis_y_gridextentloc min
+viewport_bounds: axis_z_min -9.900000e+001
+viewport_bounds: axis_z_max -9.900000e+001
+viewport_bounds: axis_z_numgrid 5.000000e+000
+viewport_bounds: axis_z_numsubgrid 2.000000e+000
+viewport_bounds: axis_z_gridtype tick
+viewport_bounds: axis_z_sgridtype tick
+viewport_bounds: axis_z_labelaxisloc all
+viewport_bounds: axis_z_labelrgb 1.000000e+000 1.000000e+000 1.000000e+000
+viewport_bounds: axis_z_labelextentloc min
+viewport_bounds: axis_z_gridextentloc min
+viewport_bounds: label_size 2.000000e+001
+viewport_bounds: axis_x_format %g
+viewport_bounds: axis_y_format %g
+viewport_bounds: axis_z_format %g
+viewport: select_begin
+ 0
+viewport: select_end
+viewport: stacking_order 0
+#
+# Attributes To Restore Case Viewport Visibility
+#
+case: viewports  1
+#
+# Element Representation Settings for Model Parts
+#
+part: select_byname_begin
+"(CASE:CMDKEYWORD_CURCASE)malha"
+part: select_byname_end
+part: elt_representation 3D_feature_2D_full
+#
+# Tool Locations
+#
+view_transf: select_tool 2.500000e-001 7.500000e-001 2.500000e-001 7.500000e-001
+#
+# Polyline commands
+#
+#
+# Attributes To Restore Created Parts and Created Variables
+#
+part: select_byname_begin
+"(CASE:CMDKEYWORD_CURCASE)malha"
+part: select_byname_end
+variables: evaluate ElemToNode = ElemToNode(plist,SX)
+#
+# Timeset Information
+#
+solution_time: timeset_select (CASE:CMDKEYWORD_CURCASE)1
+solution_time: master_timeline OFF
+solution_time: timeset_leftof nearest
+solution_time: timeset_between nearest
+solution_time: timeset_rightof nearest
+solution_time: timeset_select (CASE:CMDKEYWORD_CURCASE)2
+solution_time: master_timeline OFF
+solution_time: timeset_leftof nearest
+solution_time: timeset_between nearest
+solution_time: timeset_rightof nearest
+#
+# Visual Part Attribute Settings for Model Parts
+#
+part: select_byname_begin
+"(CASE:CMDKEYWORD_CURCASE)malha"
+part: select_byname_end
+part: modify_begin
+part: description malha
+part: ref_frame 0
+part: visible ON
+part: viewport_vis on  0
+part: mirror_original ON
+part: clip ON
+part: active ON
+part: visibility_node OFF
+part: visibility_line ON
+part: visibility_elt ON
+part: node_type dot
+part: node_scale 3.083530e-001
+part: node_detail 4
+part: node_size_by constant
+part: node_variable Coordinates
+part: symmetry_mirror_z OFF
+part: symmetry_mirror_y OFF
+part: symmetry_mirror_x OFF
+part: symmetry_mirror_xy OFF
+part: symmetry_mirror_yz OFF
+part: symmetry_mirror_xz OFF
+part: symmetry_mirror_xyz OFF
+part: displace_by deslocamento
+part: displace_factor 1.000000e-004
+part: line_width 1
+part: line_style solid
+part: hidden_line ON
+part: hidden_surface ON
+part: shading gouraud
+part: fill_pattern 0
+part: light_diff 2.000000e-001
+part: light_shin 6.000000e+000
+part: light_h_int 0.000000e+000
+part: elt_representation 3D_feature_2D_full
+part: elt_feature_angle 1.000000e+001
+part: elt_shrink_factor 0.000000e+000
+part: entity_label_node OFF
+part: entity_label_elt OFF
+part: bounding_rep box
+part: colorby_palette ElemToNode
+part: colorby_palette ElemToNode
+part: colorby_rgb 1.000000e+000 0.000000e+000 0.000000e+000
+part: opaqueness 1.000000e+000
+part: reduce_polygons OFF
+part: reduce_polygons_factor 2
+part: symmetry_type none
+part: symmetry_axis z
+part: symmetry_angle 4.500000e+001
+part: symmetry_rinstances 2.000000e+000
+part: elt_blanking ON
+part: elt_failure_variable default
+part: elt_failure_op1 <
+part: elt_failure_op2 >
+part: elt_failure_op1value 0.000000e+000
+part: elt_failure_op2value 1.000000e+000
+part: elt_failure_logicalop none
+part: texture_object 0
+part: texture_mode decal
+part: texture_repeat_mode repeat
+part: texture_interpolation linear
+part: texture_origin 0.000000e+000 0.000000e+000 0.000000e+000
+part: texture_svector 1.000000e+000 0.000000e+000 0.000000e+000
+part: texture_tvector 0.000000e+000 1.000000e+000 0.000000e+000
+part: texture_coord_type projection
+part: texture_svariable none
+part: texture_tvariable none
+part: texture_origin_nodeid -1
+part: texture_origin_use absolute
+part: texture_sorigin_nodeid -1
+part: texture_torigin_nodeid -1
+part: elt_rep_pointsnormals OFF
+part: alpha_by constant
+part: volume_quality medium
+model: adjcoord_scale_factor 1.000000e+000
+model: adjcoord_varscale_factor 0.000000e+000
+model: adjcoord_x_variable none
+model: adjcoord_y_variable none
+model: adjcoord_z_variable none
+model: adjcoord_transvec 0.000000e+000 0.000000e+000 0.000000e+000
+part: modify_end
+#
+# Attributes To Restore Created 'Client' and Copy Parts
+#
+part: select_byname_begin
+"(CASE:CMDKEYWORD_CURCASE)malha"
+part: select_byname_end
+tensor: begin
+part: description Tensor Glyph
+tensor: variable T
+tensor: color_by part
+tensor: compression_rgb 1.000000e+000 0.000000e+000 0.000000e+000
+tensor: tension_rgb 0.000000e+000 0.000000e+000 1.000000e+000
+tensor: line_width_by part
+tensor: compression_line_width 1
+tensor: tension_line_width 3
+tensor: display_tension ON
+tensor: display_compression ON
+tensor: display_major ON
+tensor: display_middle ON
+tensor: display_minor ON
+tensor: scale_factor 1.000000e-002
+tensor: tip_shape normal
+tensor: tip_size 1.000000e-001
+tensor: end
+tensor: create
+#
+# Visual Part Attribute Settings for non model parts
+#
+part: select_byname_begin
+"(CASE:CMDKEYWORD_CURCASE)Tensor Glyph"
+part: select_byname_end
+part: modify_begin
+part: description Tensor Glyph
+part: ref_frame 0
+part: visible OFF
+part: viewport_vis on  0
+part: mirror_original ON
+part: clip ON
+part: active ON
+part: visibility_node OFF
+part: visibility_line ON
+part: visibility_elt ON
+part: node_type dot
+part: node_scale 1.244059e-001
+part: node_detail 4
+part: node_size_by constant
+part: node_variable Coordinates
+part: symmetry_mirror_z OFF
+part: symmetry_mirror_y OFF
+part: symmetry_mirror_x OFF
+part: symmetry_mirror_xy OFF
+part: symmetry_mirror_yz OFF
+part: symmetry_mirror_xz OFF
+part: symmetry_mirror_xyz OFF
+part: displace_by none
+part: displace_factor 1.000000e+000
+part: line_width 1
+part: line_style solid
+part: hidden_line OFF
+part: hidden_surface OFF
+part: shading gouraud
+part: fill_pattern 0
+part: light_diff 2.000000e-001
+part: light_shin 6.000000e+000
+part: light_h_int 0.000000e+000
+part: elt_representation 3D_border_2D_full
+part: elt_feature_angle 1.000000e+001
+part: elt_shrink_factor 0.000000e+000
+part: entity_label_node OFF
+part: entity_label_elt OFF
+part: bounding_rep box
+part: colorby_palette SX
+part: colorby_palette SX
+part: colorby_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+part: opaqueness 1.000000e+000
+part: reduce_polygons OFF
+part: reduce_polygons_factor 2
+part: symmetry_type none
+part: symmetry_axis z
+part: symmetry_angle 4.500000e+001
+part: symmetry_rinstances 2.000000e+000
+part: elt_blanking ON
+part: elt_failure_variable none
+part: elt_failure_op1 <
+part: elt_failure_op2 >
+part: elt_failure_op1value 0.000000e+000
+part: elt_failure_op2value 1.000000e+000
+part: elt_failure_logicalop none
+part: texture_object 0
+part: texture_mode decal
+part: texture_repeat_mode repeat
+part: texture_interpolation linear
+part: texture_origin 0.000000e+000 0.000000e+000 0.000000e+000
+part: texture_svector 1.000000e+000 0.000000e+000 0.000000e+000
+part: texture_tvector 0.000000e+000 1.000000e+000 0.000000e+000
+part: texture_coord_type projection
+part: texture_svariable none
+part: texture_tvariable none
+part: texture_origin_nodeid -1
+part: texture_origin_use absolute
+part: texture_sorigin_nodeid -1
+part: texture_torigin_nodeid -1
+part: elt_rep_pointsnormals OFF
+part: alpha_by constant
+part: volume_quality low
+part: modify_end
+#
+# Attributes To Restore Queries and Plotters
+#
+plot: detached_background_rgb 0.00 0.00 0.00
+plot: detached_window OFF
+#
+# Attributes To Restore Probe Queries
+#
+query_interact: select_default
+query_interact: variable none
+query_interact: search exact
+query_interact: display_id ON
+query_interact: query none
+query_interact: request_method pick
+query_interact: label_visible ON
+query_interact: label_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+query_interact: label_always_on_top OFF
+query_interact: vector_report_by_x OFF
+query_interact: vector_report_by_y OFF
+query_interact: vector_report_by_z OFF
+query_interact: vector_report_by_mag ON
+query_interact: coord_report_by_x ON
+query_interact: coord_report_by_y ON
+query_interact: coord_report_by_z ON
+query_interact: marker_visible ON
+query_interact: marker_size_normalized 1.000000e+000
+query_interact: marker_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+query_interact: #_displayed 1
+query_interact: display_expansion_factor 0
+query_interact: label_format exponential
+query_interact: label_decimal_places 5
+#
+# Attributes To Restore Annotation
+#
+function: restore CMDKEYWORD_BASEDIR\retangulo.ctx_palettes
+legend: select_palette_begin
+Coordinates 
+legend: select_palette_end
+legend: title_name Coordinates
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+Time 
+legend: select_palette_end
+legend: title_name Time
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+SX 
+legend: select_palette_end
+legend: title_name SX
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+SXY 
+legend: select_palette_end
+legend: title_name SXY
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+deslocamento 
+legend: select_palette_end
+legend: title_name deslocamento
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+deslocamento x
+legend: select_palette_end
+legend: title_name deslocamento[X]
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+deslocamento y
+legend: select_palette_end
+legend: title_name deslocamento[Y]
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+deslocamento z
+legend: select_palette_end
+legend: title_name deslocamento[Z]
+legend: visible OFF
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+legend: select_palette_begin
+ElemToNode 
+legend: select_palette_end
+legend: title_name ElemToNode
+legend: visible ON
+legend: location_x 9.600000e-001
+legend: location_y 2.500000e-002
+legend: width 2.000000e-002
+legend: height 1.500000e-001
+legend: type continuous
+legend: text_type off
+legend: text_size 25
+legend: rgb 1.000000e+000 1.000000e+000 1.000000e+000
+legend: text_position left
+legend: title_location above
+legend: orientation vertical
+legend: relative_to entire_view
+legend: relative_viewport 0
+legend: show_minmax_marker OFF
+legend: format %.3e
+arrow: label_text 
+arrow: visible ON
+arrow: location -1.000000e+000 -1.000000e+000 -1.000000e+000
+arrow: normal 0.000000e+000 0.000000e+000 1.000000e+000
+arrow: size -1.000000e+000
+arrow: radius 1.000000e-001
+arrow: tip_length 2.500000e-001
+arrow: tip_radius 2.000000e+000
+arrow: offset 0.000000e+000
+arrow: rgb 1.000000e+000 0.000000e+000 0.000000e+000
+arrow: light_diff 2.000000e-001
+arrow: light_shin 8.000000e+000
+arrow: light_h_int 5.000000e-001
+arrow: label_offset 1.000000e+000
+arrow: label_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+arrow: label_size 28
+arrow: origin_by XYZ
+arrow: probe_number 0
+arrow: append_locationvalue OFF
+arrow: scale_by_locationvalue OFF
+arrow: scale_min_factor 5.000000e-001
+arrow: scale_min_value 0.000000e+000
+arrow: scale_max_factor 2.000000e+000
+dial: location_x 8.500000e-001
+dial: location_y 1.500000e-001
+dial: minimum 0.000000e+000
+dial: big_hand_range 6.000000e+001
+dial: little_hand_range 6.000000e+001
+dial: little_hand ON
+dial: radius 7.000000e-002
+dial: big_hand_rgb 0.000000e+000 1.000000e+000 0.000000e+000
+dial: little_hand_rgb 1.000000e+000 0.000000e+000 0.000000e+000
+dial: background ON
+dial: background_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+dial: border ON
+dial: visible ON
+dial: value ON
+dial: value_location right
+dial: show_as revolutions
+dial: value_format floating point
+dial: value_decimal_places 1
+dial: value_size 20
+dial: value_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+dial: tick_marks 12
+gauge: location_x 8.500000e-001
+gauge: location_y 1.500000e-001
+gauge: minimum 0.000000e+000
+gauge: maximum 1.000000e+000
+gauge: height 3.000000e-001
+gauge: width 7.000000e-002
+gauge: level_rgb 0.000000e+000 0.000000e+000 1.000000e+000
+gauge: background ON
+gauge: background_rgb 3.000000e-001 3.000000e-001 3.000000e-001
+gauge: border ON
+gauge: visible ON
+gauge: orientation vertical
+gauge: value ON
+gauge: value_location right
+gauge: value_format floating point
+gauge: value_decimal_places 1
+gauge: value_size 20
+gauge: value_rgb 1.000000e+000 1.000000e+000 1.000000e+000
+shape: type rectangle
+shape: visible ON
+shape: rgb 6.000000e-001 6.000000e-001 6.000000e-001
+shape: fill ON
+shape: line_width 2
+shape: location_x 5.000000e-001
+shape: location_y 5.000000e-001
+shape: width 0.200000
+shape: height 0.100000
+shape: rotational_angle 0.000000e+000
+shape: arrow_tip_length 5.000000e-001
+shape: arrow_tip_size 7.500000e-001
+shape: texture_object 0
+#
+# Restore Transformation View State
+#
+view_transf: restore_view CMDKEYWORD_BASEDIR\retangulo.ctx_view
+#
+# Part grouping commands
+#
+#
+# Parttree groups and populate with parts
+#
+#
+# vartree groups and populate with vars
+#
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var ''
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds create_group
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'SX'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'SY'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'SXY'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'EX'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'EY'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'EXY'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'S1'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'S2'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'ElemToNode'
+ext: treecmd.treecmds path 'Scalars'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var ''
+ext: treecmd.treecmds path 'Vectors'
+ext: treecmd.treecmds create_group
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'deslocamento'
+ext: treecmd.treecmds path 'Vectors'
+ext: treecmd.treecmds reparent_var
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var ''
+ext: treecmd.treecmds path 'Tensors'
+ext: treecmd.treecmds create_group
+ext: treecmd.treecmds begin
+ext: treecmd.treecmds var 'T'
+ext: treecmd.treecmds path 'Tensors'
+ext: treecmd.treecmds reparent_var
+#
+# Viewport tranformation linking commands
+#
+view_transf: viewport_link OFF
+#
+# Current viewport selection commands
+#
+viewport: select_begin
+ 0
+viewport: select_end
+#
+# Printer/image setting commands
+#
+file: image_format evo
+file: image_to_file ON
+file: image_to_printer OFF
+file: image_window_size normal
+file: image_window_xy 1182 724
+file: image_color_type color
+file: image_saturation 1.000000
+file: image_frame_rate 30
+anim_recorders: render_offscreen ON
+anim_recorders: render_offscreen ON
+file: image_numpasses 4
+file: image_stereo current
+file: image_screen_tiling 1 1
+#
+# VR initialization commands
+#
+view_transf: vr_scale 1.000000
+view_transf: vr_worldcenter 5.000000 0.500000 0.000000
+view_transf: vr_worlddiagonal 10.049875
+part: select_default
+part: modify_begin
+part: elt_representation 3D_feature_2D_full
+part: modify_end

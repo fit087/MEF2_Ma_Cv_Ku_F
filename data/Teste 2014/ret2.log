@@ -1,0 +1,100 @@
+117:58:43   (BOJ) -  0 triel  STARTED 
+ 17:58:43   (BOT) -  1 contrl STARTED 
+ 17:58:43   (EOT) -  1 contrl ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:43   (BOT) -  1 inmesh STARTED 
+ (DEFIN ) id      int nr:  1111 nc:     2 at:     1 size:  2222
+ (DEFIN ) x       dbl nr:  1111 nc:     1 at:  2223 size:  2222
+ (DEFIN ) y       dbl nr:  1111 nc:     1 at:  4445 size:  2222
+ (DEFIN ) z       dbl nr:  1111 nc:     1 at:  6667 size:  2222
+ 17:58:43   (BOT) -  2 joints STARTED 
+ 17:58:43   (EOT) -  2 joints ENDED    T     0.050 V     0.050 E     0.050
+ 17:58:43   (BOT) -  2 equat  STARTED 
+ 17:58:43   (EOT) -  2 equat  ENDED    T     0.030 V     0.030 E     0.030
+ (DEFIN ) prop    dbl nr:     1 nc:    13 at:  8889 size:    26
+ 17:58:43   (BOT) -  2 matset STARTED 
+ 17:58:43   (EOT) -  2 matset ENDED    T     0.000 V     0.000 E     0.000
+ (DEFIN ) incid   int nr:  2000 nc:     3 at:  8915 size:  6000
+ (DEFIN ) mtype   int nr:  2000 nc:     1 at: 14915 size:  2000
+ (DEFIN ) lm      int nr:  2000 nc:     6 at: 16915 size: 12000
+ 17:58:43   (BOT) -  2 inelem STARTED 
+ 17:58:43   (EOT) -  2 inelem ENDED    T     0.080 V     0.080 E     0.080
+ 17:58:43   (EOT) -  1 inmesh ENDED    T     0.060 V     0.060 E     0.060
+ 17:58:43   (BOT) -  1 loads  STARTED 
+ (LOCATE) id      int nr:  1111 nc:     2 at:     1 size:  2222
+ (DEFIN ) f0      dbl nr:  2219 nc:     1 at: 28915 size:  4438
+ 17:58:43   (BOT) -  2 ptload STARTED 
+ 17:58:43   (EOT) -  2 ptload ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:43   (EOT) -  1 loads  ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:43   (BOT) -  1 matriz STARTED 
+ (DEFIN ) maxa    int nr:  2219 nc:     1 at: 33353 size:  2220
+ (DEFIN ) mht     int nr:  2218 nc:     1 at: 35573 size:  2218
+ (LOCATE) lm      int nr:  2000 nc:     6 at: 16915 size: 12000
+ 17:58:43   (BOT) -  2 PROFIL STARTED 
+ 17:58:43   (EOT) -  2 PROFIL ENDED    T     0.000 V     0.000 E     0.000
+ (DEFIN ) stiff   dbl nr:413751 nc:     1 at: 37791 size:827502
+ 17:58:43   (BOT) -  2 assemb STARTED 
+ (LOCATE) x       dbl nr:  1111 nc:     1 at:  2223 size:  2222
+ (LOCATE) y       dbl nr:  1111 nc:     1 at:  4445 size:  2222
+ (LOCATE) incid   int nr:  2000 nc:     3 at:  8915 size:  6000
+ (LOCATE) prop    dbl nr:     1 nc:    13 at:  8889 size:    26
+ (LOCATE) mtype   int nr:  2000 nc:     1 at: 14915 size:  2000
+ (LOCATE) lm      int nr:  2000 nc:     6 at: 16915 size: 12000
+ (LOCATE) stiff   dbl nr:413751 nc:     1 at: 37791 size:827502
+ (LOCATE) maxa    int nr:  2219 nc:     1 at: 33353 size:  2220
+ 17:58:43   (BOT) -  3 trie2d STARTED 
+ 17:58:44   (EOT) -  3 trie2d ENDED    T     0.030 V     0.030 E     0.030
+ 17:58:44   (EOT) -  2 assemb ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:44   (EOT) -  1 matriz ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:44   (BOT) -  1 ldrivr STARTED 
+ (LOCATE) stiff   dbl nr:413751 nc:     1 at: 37791 size:827502
+ (LOCATE) maxa    int nr:  2219 nc:     1 at: 33353 size:  2220
+ (LOCATE) f0      dbl nr:  2219 nc:     1 at: 28915 size:  4438
+ (LOCATE) id      int nr:  1111 nc:     2 at:     1 size:  2222
+ (DEFIN ) disp    dbl nr:  2219 nc:     1 at:865293 size:  4438
+ (DEFIN ) fi      dbl nr:  2219 nc:     1 at:869731 size:  4438
+ (DEFIN ) f       dbl nr:  2219 nc:     1 at:874169 size:  4438
+ (DEFIN ) du      dbl nr:  2219 nc:     1 at:878607 size:  4438
+ 17:58:44   (BOT) -  2 solver STARTED 
+ 17:58:44   (BOT) -  3 stres3 STARTED 
+ 17:58:45   (EOT) -  3 stres3 ENDED    T     0.090 V     0.090 E     0.090
+ 17:58:45   (EOT) -  2 solver ENDED    T     1.100 V     1.100 E     1.100
+ 17:58:45   (EOT) -  1 ldrivr ENDED    T     0.000 V     0.000 E     0.000
+ 17:58:45   (EOJ) -  0 triel  ENDED    T     0.000 V     0.000 E     0.000
+1----------------------------------------------------------------------
+  TASK-ID      TOTAL      SYSTEM      ELAPSED    SYS     PCPU    PJOB
+ ----------------------------------------------------------------------
+
+   triel        0.000       0.000       1.000    1.00    0.00
+   contrl       0.000       0.000       1.000    1.00    0.00
+   inmesh       0.060       0.060     100.000  100.00    4.17
+   joints       0.050       0.050     100.000  100.00    3.47
+   equat        0.030       0.030     100.000  100.00    2.08
+   matset       0.000       0.000       1.000    1.00    0.00
+   inelem       0.080       0.080     100.000  100.00    5.56
+   loads        0.000       0.000       1.000    1.00    0.00
+   ptload       0.000       0.000       1.000    1.00    0.00
+   matriz       0.000       0.000       1.000    1.00    0.00
+   PROFIL       0.000       0.000       1.000    1.00    0.00
+   assemb       0.000       0.000       1.000    1.00    0.00
+   trie2d       0.030       0.030     100.000  100.00    2.08
+   ldrivr       0.000       0.000       1.000    1.00    0.00
+   solver       1.100       1.100     100.000  100.00   76.39
+   stres3       0.090       0.090     100.000  100.00    6.25
+
+ ----------------------------------------------------------------------
+
+
+ ----------------------------------------------------------------------
+
+   TOTAIS
+
+   CPU TOTAL                      1.440 SEG
+   CPU VETORIAL                   1.440 SEG
+   ELAPSED                        1.440 SEG
+
+   PORCENTAGEM VETORIAL         100.000 %  
+   PORCENTAGEM CPU              100.000 %  
+
+   RETURN CODE CPUTIM                 0 (ACUMULADO)
+
+ ----------------------------------------------------------------------

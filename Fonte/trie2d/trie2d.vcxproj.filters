@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{be4c492d-a999-4da8-985e-e574862cf2c4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;f90;for;f;fpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d176d0f0-ddd6-4015-97b0-2e4a8855a266}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bf8465a8-c03e-4900-8d35-9a48d710b095}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\ADDBAN2.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ASSEMB.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\BKDATA.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\COLSOL.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\CONTRL.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\EQUAT.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\FUNCOES.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\INELEM.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\INMESH.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\IOMNGR.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\JOINTS.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\LDRIVER.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\LOADS.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\MATRIZ.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\MATSET.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\MEMO.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\PROFIL2.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\PTLOAD.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\QUAD4.f">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\SAIDAS.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\SETDOF.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\SOLVER.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\STRESS.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\TIMETB.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\TRIE2D2.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\TRINL.F">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+#
+#       ensight:
+#
+FORMAT
+type:   ensight
+
+GEOMETRY
+model:                          ret.g000
+
+VARIABLE
+vector per node:                deslocamento    ret.dis***
+scalar per element:             SX              ret.TXX***
+scalar per element:             SY              ret.TYY***
+scalar per element:             SXY             ret.TXY***
+scalar per element:             EX              ret.EXX***
+scalar per element:             EY              ret.EYY***
+scalar per element:             EXY             ret.EXY***
+scalar per element:             S1              ret.S11***
+scalar per element:             S2              ret.S22***
+tensor symm per element:		T				ret.str***
+
+TIME
+time set:               1
+number of steps:        1
+filename start number:  0
+filename increment:     1
+time values:
+ 0.00E+00    1.00E+00

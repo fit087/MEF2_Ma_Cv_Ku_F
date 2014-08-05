@@ -1,0 +1,392 @@
+variable_type scalar
+variable 'SX'
+type constant
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+-726.268
+-363.134
+0
+363.134
+726.268
+variable_type scalar
+variable 'SXY'
+type constant
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+-187.126
+-93.563
+0
+93.563
+187.126
+variable_type scalar
+variable 'ElemToNode'
+type continuous
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+-677.386
+-338.693
+0
+338.693
+677.386
+variable_type vector
+variable 'deslocamento'
+component 'magnitude'
+type continuous
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+0
+3858.13
+7716.25
+11574.4
+15432.5
+component 'X'
+type continuous
+limit_fringes no
+scale linear
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+number_of_levels 5
+component_colors 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_colors 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_colors 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_colors 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+-2418.6
+-1211.44
+-4.28516
+1202.87
+2410.03
+component 'Y'
+type continuous
+limit_fringes no
+scale linear
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+number_of_levels 5
+component_colors 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_colors 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_colors 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_colors 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+-15432.5
+-11574.4
+-7716.25
+-3858.13
+0
+component 'Z'
+type continuous
+limit_fringes no
+scale linear
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+number_of_levels 5
+component_colors 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_colors 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_colors 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_colors 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+0
+0
+0
+0
+0
+variable_type coordinate
+type continuous
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+0
+2.51247
+5.02494
+7.53741
+10.0499
+variable_type time
+type continuous
+limit_fringes no
+scale linear
+number_of_levels 5
+levels_lock on
+node_lock color
+colors_per_level 16
+degree linear
+display_undefined by_model_color
+alpha_volume_scale -1.000000
+color_space rgba
+component_values 0 5
+0.000000 0.000000
+0.250000 0.000000
+0.500000 0.000000
+0.750000 1.000000
+1.000000 1.000000
+component_values 1 5
+0.000000 0.000000
+0.250000 1.000000
+0.500000 1.000000
+0.750000 1.000000
+1.000000 0.000000
+component_values 2 5
+0.000000 1.000000
+0.250000 1.000000
+0.500000 0.000000
+0.750000 0.000000
+1.000000 0.000000
+component_values 3 6
+0.000000 0.300000
+0.200000 0.300000
+0.400000 0.300000
+0.600000 0.300000
+0.800000 0.300000
+1.000000 0.300000
+values
+0
+25
+50
+75
+100
