@@ -63,7 +63,11 @@ c
      &                 neqp,nnoel,8,damp1,damp2,betan,gamman,
      &                 dt,neq,ndaux)
 
+      tempo = 0.d0
+      
+      
       DO istep = 1,nsteps
+          tempo = tempo + dt
           
           call preditor(neq,dt,betan,gamman,ucorr,vcorr,an,upred,vpred)
           call trie2d_fint (stiff,fp,up,maxa,lm,x,y,z,incid,
@@ -76,12 +80,12 @@ c
               an(ieq)=f0(ieq)-f(ieq)-fi(ieq)
           ENDDO
           
-          call COLSOL(stiff,an,maxa,neq,nwk,neq+1,2,ierror)  !o que ele retornar vai estar no an
+          call COLSOL(stiff,an,maxa,neq,nwk,neq+1,2,ierror)
           
           call corretor(neq,dt,betan,gamman,upred,vpred,an,ucorr,vcorr,)
           
+          write (66,'(1p,1x,e15.8,1x,e15.8)') tempo, ucorr(id(1,2))
           
-            ! a cantidade de arquivos que eu quero
           IF (mod(istep,nflag).eq.0) THEN
               icount = icount + 1
               CALL ENSG_VEC('dis',ucorr,id,icount)

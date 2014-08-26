@@ -1,0 +1,110 @@
+113:25:18   (BOJ) -  0 triel  STARTED 
+ 13:25:18   (BOT) -  1 contrl STARTED 
+ 13:25:18   (EOT) -  1 contrl ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (BOT) -  1 inmesh STARTED 
+ (DEFIN ) id      int nr:     4 nc:     2 at:     1 size:     8
+ (DEFIN ) x       dbl nr:     4 nc:     1 at:     9 size:     8
+ (DEFIN ) y       dbl nr:     4 nc:     1 at:    17 size:     8
+ (DEFIN ) z       dbl nr:     4 nc:     1 at:    25 size:     8
+ 13:25:18   (BOT) -  2 joints STARTED 
+ 13:25:18   (EOT) -  2 joints ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (BOT) -  2 equat  STARTED 
+ 13:25:18   (EOT) -  2 equat  ENDED    T     0.000 V     0.000 E     0.000
+ (DEFIN ) prop    dbl nr:     1 nc:    13 at:    33 size:    26
+ 13:25:18   (BOT) -  2 matset STARTED 
+ 13:25:18   (EOT) -  2 matset ENDED    T     0.000 V     0.000 E     0.000
+ (DEFIN ) incid   int nr:     2 nc:     3 at:    59 size:     6
+ (DEFIN ) mtype   int nr:     2 nc:     1 at:    65 size:     2
+ (DEFIN ) lm      int nr:     2 nc:     6 at:    67 size:    12
+ 13:25:18   (BOT) -  2 inelem STARTED 
+ 13:25:18   (EOT) -  2 inelem ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (EOT) -  1 inmesh ENDED    T     0.010 V     0.010 E     0.010
+ 13:25:18   (BOT) -  1 loads  STARTED 
+ (LOCATE) id      int nr:     4 nc:     2 at:     1 size:     8
+ (DEFIN ) f0      dbl nr:     4 nc:     1 at:    79 size:     8
+ 13:25:18   (BOT) -  2 ptload STARTED 
+ 13:25:18   (EOT) -  2 ptload ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (EOT) -  1 loads  ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (BOT) -  1 matriz STARTED 
+ (DEFIN ) maxa    int nr:     4 nc:     1 at:    87 size:     4
+ (DEFIN ) mht     int nr:     3 nc:     1 at:    91 size:     4
+ (LOCATE) lm      int nr:     2 nc:     6 at:    67 size:    12
+ 13:25:18   (BOT) -  2 PROFIL STARTED 
+ 13:25:18   (EOT) -  2 PROFIL ENDED    T     0.000 V     0.000 E     0.000
+ (DEFIN ) stiff   dbl nr:     5 nc:     1 at:    95 size:    10
+ 13:25:18   (BOT) -  2 assemb STARTED 
+ (LOCATE) x       dbl nr:     4 nc:     1 at:     9 size:     8
+ (LOCATE) y       dbl nr:     4 nc:     1 at:    17 size:     8
+ (LOCATE) incid   int nr:     2 nc:     3 at:    59 size:     6
+ (LOCATE) prop    dbl nr:     1 nc:    13 at:    33 size:    26
+ (LOCATE) mtype   int nr:     2 nc:     1 at:    65 size:     2
+ (LOCATE) lm      int nr:     2 nc:     6 at:    67 size:    12
+ (LOCATE) stiff   dbl nr:     5 nc:     1 at:    95 size:    10
+ (LOCATE) maxa    int nr:     4 nc:     1 at:    87 size:     4
+ 13:25:18   (BOT) -  3 trie2d STARTED 
+ 13:25:18   (EOT) -  3 trie2d ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (EOT) -  2 assemb ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (EOT) -  1 matriz ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:18   (BOT) -  1 ldrivr STARTED 
+ (LOCATE) x       dbl nr:     4 nc:     1 at:     9 size:     8
+ (LOCATE) y       dbl nr:     4 nc:     1 at:    17 size:     8
+ (LOCATE) z       dbl nr:     4 nc:     1 at:    25 size:     8
+ (LOCATE) incid   int nr:     2 nc:     3 at:    59 size:     6
+ (LOCATE) prop    dbl nr:     1 nc:    13 at:    33 size:    26
+ (LOCATE) mtype   int nr:     2 nc:     1 at:    65 size:     2
+ (LOCATE) lm      int nr:     2 nc:     6 at:    67 size:    12
+ (LOCATE) stiff   dbl nr:     5 nc:     1 at:    95 size:    10
+ (LOCATE) maxa    int nr:     4 nc:     1 at:    87 size:     4
+ (LOCATE) f0      dbl nr:     4 nc:     1 at:    79 size:     8
+ (LOCATE) id      int nr:     4 nc:     2 at:     1 size:     8
+ (DEFIN ) fi      dbl nr:     4 nc:     1 at:   105 size:     8
+ (DEFIN ) f       dbl nr:     4 nc:     1 at:   113 size:     8
+ (DEFIN ) upred   dbl nr:     4 nc:     1 at:   121 size:     8
+ (DEFIN ) vpred   dbl nr:     4 nc:     1 at:   129 size:     8
+ (DEFIN ) ucorr   dbl nr:     4 nc:     1 at:   137 size:     8
+ (DEFIN ) vcorr   dbl nr:     4 nc:     1 at:   145 size:     8
+ (DEFIN ) du      dbl nr:     4 nc:     1 at:   153 size:     8
+ 13:25:18   (BOT) -  2 solver STARTED 
+ 13:25:20   (BOT) -  3 stres3 STARTED 
+ 13:25:20   (EOT) -  3 stres3 ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:20   (EOT) -  2 solver ENDED    T     2.440 V     2.440 E     2.440
+ 13:25:20   (EOT) -  1 ldrivr ENDED    T     0.000 V     0.000 E     0.000
+ 13:25:20   (EOJ) -  0 triel  ENDED    T     0.000 V     0.000 E     0.000
+1----------------------------------------------------------------------
+  TASK-ID      TOTAL      SYSTEM      ELAPSED    SYS     PCPU    PJOB
+ ----------------------------------------------------------------------
+
+   triel        0.000       0.000       1.000    1.00    0.00
+   contrl       0.000       0.000       1.000    1.00    0.00
+   inmesh       0.010       0.010     100.000  100.00    0.41
+   joints       0.000       0.000       1.000    1.00    0.00
+   equat        0.000       0.000       1.000    1.00    0.00
+   matset       0.000       0.000       1.000    1.00    0.00
+   inelem       0.000       0.000       1.000    1.00    0.00
+   loads        0.000       0.000       1.000    1.00    0.00
+   ptload       0.000       0.000       1.000    1.00    0.00
+   matriz       0.000       0.000       1.000    1.00    0.00
+   PROFIL       0.000       0.000       1.000    1.00    0.00
+   assemb       0.000       0.000       1.000    1.00    0.00
+   trie2d       0.000       0.000       1.000    1.00    0.00
+   ldrivr       0.000       0.000       1.000    1.00    0.00
+   solver       2.440       2.440     100.000  100.00   99.59
+   stres3       0.000       0.000       1.000    1.00    0.00
+
+ ----------------------------------------------------------------------
+
+
+ ----------------------------------------------------------------------
+
+   TOTAIS
+
+   CPU TOTAL                      2.450 SEG
+   CPU VETORIAL                   2.450 SEG
+   ELAPSED                        2.450 SEG
+
+   PORCENTAGEM VETORIAL         100.000 %  
+   PORCENTAGEM CPU              100.000 %  
+
+   RETURN CODE CPUTIM                 0 (ACUMULADO)
+
+ ----------------------------------------------------------------------

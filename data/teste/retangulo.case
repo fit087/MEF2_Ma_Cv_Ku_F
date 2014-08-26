@@ -5,10 +5,10 @@ FORMAT
 type:   ensight
 
 GEOMETRY
-model:                          trans.geo000
+model:                          ret.geo000
 
 VARIABLE
-vector per node:                deslocamento    trans.dis***
+vector per node:                deslocamento    ret.dis***
 
 TIME
 time set:               1

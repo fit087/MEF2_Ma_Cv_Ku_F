@@ -10,7 +10,7 @@
       
       dimension       stiff  (nwk)           ,
      &                fp     (0:neq)         ,
-     &                up     (0:neq)         ,   !Declara que o vetor inicia em 0
+     &                up     (0:neq)         ,
      &                fi     (0:neq)         ,
      &                upred  (0:neq)         ,
      &                vpred  (0:neq)         , 
@@ -35,7 +35,7 @@
      &                fe_pred  (6) 
       
       rewind ielmnt
-
+      fi=0.d0
 	do iel = 1, nume
           
           ske(:) = 0.d0
@@ -116,7 +116,7 @@ c       massa do elemento (area*thic*rho)
           thic = prop ( mtype(iel),3 )
 	    dens = prop ( mtype(iel),4 )
           
-          emass = 0.5d0 * area2 * thic * dens !m esta implicito que é enteiro
+          emass = 0.5d0 * area2 * thic * dens
           emass_3 = emass/3.d0
 	  
 c       matriz de massa de elemento
@@ -143,7 +143,8 @@ c      montando matriz quadrada
           enddo 
           
 c      mapeando deslocamentos e velocidades preditos
-
+          uepred(:) = 0.d0
+          vepred(:) = 0.d0
           do ind =1, nd
 	        ieq = lm(iel,ind) 
               if(ieq.gt.0) then
@@ -153,7 +154,7 @@ c      mapeando deslocamentos e velocidades preditos
           enddo
 
 c     calculando forca interna
-
+        fe1_pred=0.d0
         do ind = 1, nd
            do jnd = 1, nd
               fe1_pred(ind)= fe1_pred(ind) + sk(ind,jnd) * ( uepred(jnd)
@@ -162,7 +163,7 @@ c     calculando forca interna
            enddo
         enddo
    
-   
+        fe2_pred=0.d0
         do ind = 1, nd
            do jnd = 1, nd
               fe2_pred(ind)= fe2_pred(ind) + betan*sm(ind,jnd)
@@ -170,6 +171,7 @@ c     calculando forca interna
            enddo
         enddo   
    
+        fe_pred(:) = 0.d0!Adicionado 2014.08.26
         fe_pred(:) = fe1_pred(:) + fe2_pred(:)
         
 c     assemblando froca interna
