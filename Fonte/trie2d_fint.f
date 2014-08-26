@@ -157,17 +157,22 @@ c     calculando forca interna
         fe1_pred=0.d0
         do ind = 1, nd
            do jnd = 1, nd
+    !         fe1_pred(ind)= fe1_pred(ind) + sk(ind,jnd) * ( uepred(jnd)
+    !&                       + gamman*vepred(jnd) )
+                                                    
               fe1_pred(ind)= fe1_pred(ind) + sk(ind,jnd) * ( uepred(jnd)
-     &                       + gamman*vepred(jnd) )
-               
+     &                       + damp2*vepred(jnd) )
            enddo
         enddo
    
         fe2_pred=0.d0
         do ind = 1, nd
            do jnd = 1, nd
-              fe2_pred(ind)= fe2_pred(ind) + betan*sm(ind,jnd)
+    !         fe2_pred(ind)= fe2_pred(ind) + betan*sm(ind,jnd)
+    !&                       *vepred(jnd)
+                       fe2_pred(ind)= fe2_pred(ind) + damp1*sm(ind,jnd)
      &                       *vepred(jnd)
+
            enddo
         enddo   
    

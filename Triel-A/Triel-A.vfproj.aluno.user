@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VisualStudioUserFile ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{AB39492F-E9C4-4FAA-A6B0-8F3628E1F25D}">
 	<Configurations>
-		<Configuration Name="Debug|Win32" WorkingDirectory="C:\Users\aluno\Documents\Adolfo Correa\Sabrina_e_Danyelle-2014-08-19\Sabrina e Danyelle\Triel-A_newmark\Triel-A_newmark\data\teste"/>
+		<Configuration Name="Debug|Win32" WorkingDirectory="C:\Users\aluno\Documents\GitHub\MEF2_Ma_Cv_Ku_F\data\teste"/>
 		<Configuration Name="Release|Win32"/></Configurations></VisualStudioUserFile>
